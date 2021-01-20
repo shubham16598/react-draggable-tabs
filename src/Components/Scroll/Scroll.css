@@ -1,0 +1,84 @@
+.scrolltab {
+    display: flex;
+    flex-flow: row;
+}
+
+.tabs {
+    width: 500px;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.selected {
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+.tab {
+    width: 80px;
+    height: 100%;
+    background-color: rgb(180, 167, 167);
+}
+
+.tabText {
+    position: relative;
+    bottom: 2px;
+}
+
+.tab:hover {
+    background-color: rgb(134, 125, 125);
+}
+
+.tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.left-chevron>h2:after {
+    content: ' \003C';
+}
+
+.right-chevron>h2:after {
+    content: ' \003E';
+}
+
+.icon {
+    display: none;
+    width: 15px;
+    height: 15px;
+}
+
+.tab:hover>.icon {
+    display: block;
+}
+
+.popup {
+    position: fixed;
+    width: 60%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+}
+
+.popup_inner {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    margin: auto;
+    background: white;
+}
+.popup_inner >h1{
+    color: black;
+}
